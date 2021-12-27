@@ -378,6 +378,46 @@ img {
 
 /* Преимущества */
 
+.reasons {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.reasons-container {
+  display: flex;
+}
+
+.reasons-left,
+.reasons-right {
+  width: calc(50% - 30px);
+}
+
+.reasons-left {
+  display: flex;
+  justify-content: center;
+}
+
+.reasons-list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reasons-item {
+  width: 170px;
+  height: 133px;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.reasons-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.reasons-item:nth-child(even) {
+  margin-top: 30px;
+}
+
 .reasons-count {
   font-weight: 700;
   font-size: 42px;
@@ -385,6 +425,18 @@ img {
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--third-text-color);
+  display: block;
+  text-align: center;
+}
+
+.reasons-count::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: center;
+  color: #ff6c00;
+  vertical-align: top;
 }
 
 .reasons-item-text {
@@ -397,6 +449,7 @@ img {
 
 .reasons-pre-title {
   color: var(--third-text-color);
+  margin-bottom: 20px;
 }
 
 .reasons-pre-title::before {
@@ -405,6 +458,7 @@ img {
 
 .reasons-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 
 .reasons-after-title {
@@ -414,6 +468,7 @@ img {
 /* Мастера */
 
 .masters {
+  background: #f7f7f7;
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -466,6 +521,40 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.masters-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.masters-social-item + .masters-social-item {
+  margin-left: 10px;
+}
+
+.masters-social-link {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.masters-social-icon {
+  fill: #303030;
+}
+
+.masters-social-link:hover .masters-social-icon,
+.masters-social-link:focus .masters-social-icon {
+  fill: var(--accent-color);
 }
 
 /* Галерея */

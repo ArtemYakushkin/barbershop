@@ -77,6 +77,7 @@ img {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background-color: transparent;
+  transition: color 300ms linear, background-color 300ms linear;
 }
 
 .btn:hover,
@@ -119,12 +120,15 @@ img {
 /* Шапка */
 
 .header {
-  background-color: var(--fourth-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .header-conteiner {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
 }
@@ -155,11 +159,24 @@ img {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--header-text-color);
+  position: relative;
+  transition: color 300ms linear;
 }
 
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+}
+
+.header-link.current::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  border-radius: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -48px;
 }
 
 .header-connect {
@@ -172,6 +189,12 @@ img {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--header-text-color);
+  transition: color 300ms linear;
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
 }
 
 .header-btn {
@@ -185,8 +208,31 @@ img {
   display: flex;
 }
 
-.hero-list {
+.hero-left {
   width: 93px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 23px;
+  padding-bottom: 40px;
+}
+
+.hero-list {
+  display: flex;
+  transform: rotate(-90deg) translate(-15px);
+  transform-origin: top left;
+  align-items: center;
+}
+
+.hero-list::before {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background-color: var(--second-title-color);
+  margin-right: 40px;
+}
+
+.hero-item + .hero-item {
+  margin-left: 40px;
 }
 
 .hero-link {
@@ -195,6 +241,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--third-text-color);
+  transition: color 300ms linear;
 }
 
 .hero-link:hover,
@@ -499,6 +546,30 @@ img {
   margin-bottom: 30px;
 }
 
+.masters-item:hover .masters-top-text {
+  transform: translateY(0);
+}
+
+.masters-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.masters-top-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 40px 30px;
+  background-color: rgba(255, 68, 0, 0.767);
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms;
+  overflow: auto;
+}
+
 .masters-item-content {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -546,10 +617,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 300ms linear;
 }
 
 .masters-social-icon {
   fill: #303030;
+  transition: color 300ms linear;
 }
 
 .masters-social-link:hover .masters-social-icon,

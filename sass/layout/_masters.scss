@@ -7,10 +7,9 @@
 .masters-pre-title {
   color: var(--third-text-color);
   margin-bottom: 20px;
-}
-
-.masters-pre-title::before {
-  background: #303030;
+  &::before {
+    background: #303030;
+  }
 }
 
 .masters-title {
@@ -87,10 +86,9 @@
 .masters-social-item {
   width: 44px;
   height: 44px;
-}
-
-.masters-social-item + .masters-social-item {
-  margin-left: 10px;
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .masters-social-link {

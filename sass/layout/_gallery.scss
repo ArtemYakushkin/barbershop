@@ -6,10 +6,9 @@
 .gallery-pre-title {
   color: var(--third-text-color);
   margin-bottom: 44px;
-}
-
-.gallery-pre-title::before {
-  background: #303030;
+  &::before {
+    background: #303030;
+  }
 }
 
 .gallery-list {

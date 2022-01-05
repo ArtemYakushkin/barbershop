@@ -20,10 +20,9 @@
 .about-pre-title {
   color: var(--third-text-color);
   margin-bottom: 20px;
-}
-
-.about-pre-title::before {
-  background: #303030;
+  &::before {
+    background: #303030;
+  }
 }
 
 .about-title {

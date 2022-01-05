@@ -1,9 +1,8 @@
 .contacts-wrap {
   background-color: #191c26;
-}
-
-.contacts-wrap .container {
-  display: flex;
+  .container {
+    display: flex;
+  }
 }
 
 .online {
@@ -24,8 +23,7 @@
   margin-bottom: 44px;
 }
 
-.online-input,
-.online-text {
+.online-input {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -39,38 +37,58 @@
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   padding-bottom: 8px;
   transition: border-color 300ms linear;
-}
-
-.online-input:focus,
-.online-text:focus {
-  border-color: #ffffff;
-}
-
-.online-input:focus::placeholder,
-.online-text:focus::placeholder {
-  color: #ffffff;
-}
-
-.online-input + .online-input {
-  width: 260px;
+  &:focus {
+    border-color: #ffffff;
+  }
+  &:focus::placeholder {
+    color: #ffffff;
+  }
+  & + & {
+    width: 260px;
+  }
+  &::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 300ms linear;
+  }
 }
 
 .online-text {
-  width: 100%;
-  height: 76px;
-  resize: none;
-  margin-bottom: 44px;
-}
-
-.online-input::placeholder,
-.online-text::placeholder {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
+  width: 100%;
+  height: 76px;
+  resize: none;
+  margin-bottom: 44px;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
-  transition: color 300ms linear;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-bottom: 8px;
+  transition: border-color 300ms linear;
+  &:focus {
+    border-color: #ffffff;
+  }
+  &:focus::placeholder {
+    color: #ffffff;
+  }
+  &::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 300ms linear;
+  }
 }
 
 .online-btn {
@@ -101,10 +119,9 @@
 .contacts-item {
   display: flex;
   align-items: center;
-}
-
-.contacts-item:not(:last-child) {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts-icon {
@@ -129,14 +146,13 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-}
-
-.contacts-bottom-title::before {
-  content: "";
-  height: 1px;
-  width: 60px;
-  background-color: rgba(157, 164, 189, 0.4);
-  margin-right: 20px;
+  &::before {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background-color: rgba(157, 164, 189, 0.4);
+    margin-right: 20px;
+  }
 }
 
 .contacts-bottom-text {

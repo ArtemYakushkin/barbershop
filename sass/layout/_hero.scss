@@ -24,11 +24,11 @@
   }
 }
 
-.hero-item + .hero-item {
+.hero-list__item + .hero-list__item {
   margin-left: 40px;
 }
 
-.hero-link {
+.hero-list__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -57,7 +57,7 @@
   padding-left: 96px;
 }
 
-.hero-pre-title {
+.hero__pre-title {
   color: var(--first-text-color);
   margin-bottom: 20px;
   &::before {
@@ -65,7 +65,7 @@
   }
 }
 
-.hero-title {
+.hero__title {
   font-family: Raleway;
   font-weight: 700;
   font-size: 72px;
@@ -75,7 +75,7 @@
   margin-bottom: 20px;
 }
 
-.hero-after-title {
+.hero__after-title {
   color: var(--second-text-color);
   width: 400px;
 }

@@ -23,7 +23,7 @@
   flex-wrap: wrap;
 }
 
-.reasons-item {
+.reasons-list__item {
   width: 170px;
   height: 133px;
   background-color: #f7f7f7;
@@ -36,7 +36,7 @@
   }
 }
 
-.reasons-count {
+.reasons-list__count {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -56,7 +56,7 @@
   }
 }
 
-.reasons-item-text {
+.reasons-list__text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -64,7 +64,7 @@
   color: var(--third-text-color);
 }
 
-.reasons-pre-title {
+.reasons__pre-title {
   color: var(--third-text-color);
   margin-bottom: 20px;
   &::before {
@@ -72,11 +72,11 @@
   }
 }
 
-.reasons-title {
+.reasons__title {
   color: var(--second-title-color);
   margin-bottom: 20px;
 }
 
-.reasons-after-title {
+.reasons__after-title {
   color: var(--fourth-text-color);
 }

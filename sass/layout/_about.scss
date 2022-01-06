@@ -13,11 +13,11 @@
   flex-shrink: 0;
 }
 
-.about-item:not(:last-child) {
+.about-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-pre-title {
+.about__pre-title {
   color: var(--third-text-color);
   margin-bottom: 20px;
   &::before {
@@ -25,17 +25,17 @@
   }
 }
 
-.about-title {
+.about__title {
   color: var(--second-title-color);
   margin-bottom: 20px;
 }
 
-.about-after-title {
+.about__after-title {
   color: var(--fourth-text-color);
   margin-bottom: 20px;
 }
 
-.about-text {
+.about__text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
@@ -43,6 +43,6 @@
   margin-bottom: 40px;
 }
 
-.about-btn {
+.about__btn {
   color: var(--second-button-color);
 }

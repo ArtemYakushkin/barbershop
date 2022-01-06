@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 
-.prices-pre-title {
+.prices__pre-title {
   color: var(--first-text-color);
   margin-bottom: 20px;
   &::before {
@@ -18,7 +18,7 @@
   }
 }
 
-.prices-title {
+.prices__title {
   color: var(--main-title-color);
   margin-bottom: 44px;
 }
@@ -41,7 +41,7 @@
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-.prices-item {
+.prices-list__item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -63,14 +63,14 @@
   order: -1;
 }
 
-.prices-item-text {
+.prices-list__text {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
 
-.prices-btn {
+.prices__btn {
   color: var(--first-button-color);
   display: block;
   margin: 0 auto;

@@ -145,24 +145,40 @@
       </section>
 
       <!-- О нас -->
-      <!--<section class="about">
+      <section class="about">
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-list__item">
-              <img
-                src="./img/1200px/about-1-1200.jpg"
-                alt="барбер бреет бороду"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="./img/1200px/about-1-1200.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./img/768px/about-1-768.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./img/1200px/about-1-1200.jpg"
+                  alt="барбер бреет бороду"
+                />
+              </picture>
             </li>
             <li class="about-list__item">
-              <img
-                src="./img/1200px/about-2-1200.jpg"
-                alt="барбер делает кантик"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="./img/1200px/about-2-1200.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./img/768px/about-2-768.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./img/1200px/about-2-1200.jpg"
+                  alt="барбер делает кантик"
+                />
+              </picture>
             </li>
           </ul>
           <div class="about-right">
@@ -184,7 +200,7 @@
             <button class="about__btn btn" type="button">онлайн-запись</button>
           </div>
         </div>
-      </section>-->
+      </section>
 
       <!-- Прайслист -->
       <!--<section class="prices">

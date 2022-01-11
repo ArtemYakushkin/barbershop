@@ -13,7 +13,7 @@
   transition: color 300ms linear, background-color 300ms linear;
   &:hover,
   &:focus {
-    color: var(--first-button-color);
-    background-color: var(--accent-color);
+    color: #ffffff;
+    background-color: #ff6c00;
   }
 }

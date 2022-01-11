@@ -1,0 +1,15 @@
+.section-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  @media screen and (min-width: 1200px) {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+  }
+}

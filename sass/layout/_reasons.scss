@@ -1,0 +1,125 @@
+.reasons {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.reasons-container {
+  display: flex;
+  flex-direction: column-reverse;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.reasons-left,
+.reasons-right {
+  @media screen and (min-width: 1200px) {
+    width: calc(50% - 30px);
+  }
+}
+
+.reasons-right {
+  margin-bottom: 44px;
+  @media screen and (min-width: 768px) {
+    min-width: 500px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: unset;
+    margin-bottom: 0;
+  }
+}
+
+.reasons__pre-title {
+  color: #303030;
+  margin-bottom: 20px;
+  &::before {
+    background-color: #303030;
+  }
+}
+
+.reasons__title {
+  color: #303030;
+  margin-bottom: 20px;
+  max-width: 350px;
+}
+
+.reasons__after-title {
+  color: #555555;
+  max-width: 350px;
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+  }
+}
+
+.reasons-left {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
+}
+
+.reasons-list__item {
+  width: calc(50% - 15px);
+  height: 133px;
+  background-color: #f7f7f7;
+  padding: 20px 35px;
+
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
+}
+
+.reasons-list__count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  &::after {
+    content: "+";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    color: #ff6c00;
+  }
+}
+
+.reasons-list__text {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}

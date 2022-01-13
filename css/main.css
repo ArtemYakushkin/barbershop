@@ -1015,4 +1015,70 @@ img {
 .socials__icon {
   fill: currentColor;
 }
+
+.gallery {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.gallery__pre-title {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.gallery__pre-title::before {
+  background-color: #303030;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-list__item {
+  margin-bottom: 30px;
+}
+
+.gallery-list__item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-list__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .gallery-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .gallery-list__item:nth-child(n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-list__item {
+    margin-right: 0;
+  }
+  .gallery-list__item:nth-child(-n + 4) {
+    margin-bottom: 0;
+  }
+  .gallery-list__item:nth-child(-n + 3) {
+    margin-right: 30px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

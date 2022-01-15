@@ -1087,40 +1087,28 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts-wrap {
+  .contacts-wrap .container {
     display: flex;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .online-container {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
 .online {
   padding-top: 84px;
-  padding-bottom: 84px;
+  padding-bottom: 42px;
 }
 
 @media screen and (min-width: 768px) {
   .online {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .online {
-    width: 655px;
     padding-top: 130px;
-    padding-bottom: 84px;
-    padding-left: 55px;
+    padding-bottom: 0;
+    width: calc(50% + 15px);
   }
 }
 
@@ -1229,37 +1217,21 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contacts-container {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .contacts {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 84px;
+  padding-top: 42px;
   padding-bottom: 84px;
-  padding-left: 31px;
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
-    padding-left: 39px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts {
-    max-width: 625px;
+    width: calc(50% + 15px);
     padding-top: 130px;
     padding-bottom: 130px;
     padding-left: 100px;
@@ -1290,9 +1262,14 @@ img {
   }
 }
 
+.contacts-address {
+  margin-bottom: 44px;
+}
+
 @media screen and (min-width: 768px) {
   .contacts-address {
     width: 330px;
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }
@@ -1301,16 +1278,6 @@ img {
   .contacts-address {
     margin-right: 0;
     margin-bottom: 70px;
-  }
-}
-
-.contacts-list {
-  margin-bottom: 44px;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts-list {
-    margin-bottom: 0;
   }
 }
 
